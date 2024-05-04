@@ -1,0 +1,16 @@
+<form [formGroup]="loginForm" (submit)="handleLoginForm()">
+    <div>
+        <label for="email">Correo electronico</label>
+        <input formControlName="email" type="email" name="email" id="email" placeholder="Ingrese su email.." />
+    </div>
+    <div>
+        <label for="password">Contraseña</label>
+        <input formControlName="password" type="password" name="password" id="password"
+            placeholder="Ingrese su password.." />
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+        <button type="submit">Login</button>
+    </div>
+
+</form>
